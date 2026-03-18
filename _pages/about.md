@@ -40,5 +40,3 @@ Currently, I work as a Digital Engineering Technology Consultant at EY, where I 
 I'm particularly interested in opportunities involving electronics design, robotics, embedded systems, and hardware-software integration, where I can apply both my hands-on engineering background and software expertise to build real-world systems.
 
 I am motivated by the opportunity to contribute to technologies that solve meaningful problems and improve how people live and work.
-
-

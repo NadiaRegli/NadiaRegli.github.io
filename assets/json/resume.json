@@ -36,17 +36,17 @@
       "endDate": "",
       "summary": "Enterprise CMS Platform - Leading Australian Health Insurance Provider <br> Vue.js, C#, Kentico CMS, Azure, Azure DevOps, Azure AD B2C, Jira, Confluence.",
       "highlights": [
-          "Developed and delivered full-stack features across the public website, member portal and consultant portal for a major Australian health insurance provider.", 
-          "Investigated and resolved application defects across front-end and back-end systems, improving platform stability and user experience.", 
-          "Diagnosed and resolved issues in Azure Function Apps and backend APIs, ensuring reliable integration across distributed cloud services.", 
-          "Implemented multi-factor authentication within the website sign-in flow using Azure AD B2C, improving platform security.", 
-          "Delivered a Kentico CMS platform migration to a newer version to maintain platform support and long-term maintainability.", 
-          "Tested and deployed API updates across development environments using Azure DevOps pipelines.", 
-          "Conducted code reviews and testing improvements to maintain high-quality, maintainable code across the development team.", 
-          "Produced technical documentation to support maintainability, onboarding and knowledge sharing within the engineering team.", 
-          "Presented and demonstrated technical solutions to senior stakeholders and C-suite client representatives, translating technical implementations into clear business outcomes.", 
-          "Mentored new team members and coordinated with cross-functional teams to deliver integrated platform improvements.", 
-          "Organised team engagement initiatives that strengthened collaboration and team culture."
+        "Developed and delivered full-stack features across the public website, member portal and consultant portal for a major Australian health insurance provider.",
+        "Investigated and resolved application defects across front-end and back-end systems, improving platform stability and user experience.",
+        "Diagnosed and resolved issues in Azure Function Apps and backend APIs, ensuring reliable integration across distributed cloud services.",
+        "Implemented multi-factor authentication within the website sign-in flow using Azure AD B2C, improving platform security.",
+        "Delivered a Kentico CMS platform migration to a newer version to maintain platform support and long-term maintainability.",
+        "Tested and deployed API updates across development environments using Azure DevOps pipelines.",
+        "Conducted code reviews and testing improvements to maintain high-quality, maintainable code across the development team.",
+        "Produced technical documentation to support maintainability, onboarding and knowledge sharing within the engineering team.",
+        "Presented and demonstrated technical solutions to senior stakeholders and C-suite client representatives, translating technical implementations into clear business outcomes.",
+        "Mentored new team members and coordinated with cross-functional teams to deliver integrated platform improvements.",
+        "Organised team engagement initiatives that strengthened collaboration and team culture."
       ]
     },
     {
@@ -57,13 +57,13 @@
       "endDate": "2023-12-01",
       "summary": "Autonomous Mining Robots <br> ROS, ROS2, Python, C++, Gazebo, RViz, Linux, Git.",
       "highlights": [
-          "Developed robotics software in Python and C++ with a Linux (Ubuntu) environment using ROS architecture.",
-          "Developed a navigation path planning and parking algorithm for autonomous robot positioning and docking.",
-          "Designed interfaces and signal filtering for wheel weight sensors to detect load distribution and improve sensor data reliability.",
-          "Migrated robotics software from ROS to ROS2, improving system modularity and compatibility with modern robotics frameworks.",
-          "Visualised and tested robot behaviour using RViz and Gazebo simulation environments to validate navigation and system performance.",
-          "Processed and analysed sensor data to diagnose system behaviour and support robotics problem solving.",
-          "Collaborated with robotics engineers in team meetings and technical discussions to develop solutions for underground and open-cut mining robotics applications."
+        "Developed robotics software in Python and C++ with a Linux (Ubuntu) environment using ROS architecture.",
+        "Developed a navigation path planning and parking algorithm for autonomous robot positioning and docking.",
+        "Designed interfaces and signal filtering for wheel weight sensors to detect load distribution and improve sensor data reliability.",
+        "Migrated robotics software from ROS to ROS2, improving system modularity and compatibility with modern robotics frameworks.",
+        "Visualised and tested robot behaviour using RViz and Gazebo simulation environments to validate navigation and system performance.",
+        "Processed and analysed sensor data to diagnose system behaviour and support robotics problem solving.",
+        "Collaborated with robotics engineers in team meetings and technical discussions to develop solutions for underground and open-cut mining robotics applications."
       ]
     },
     {
@@ -74,14 +74,14 @@
       "endDate": "2023-12-01",
       "summary": "Tutor for 2nd-4th year mechatronics engineering courses <br> Control systems, Mechatronics design, Engineering education.",
       "highlights": [
-          "Delivered tutorials and practical sessions for 2nd-4th year mechatronics engineering courses, including Control Systems Implementation, Control Engineering and Mechatronic System Design Project I and II.",
-          "Presented lessons and worked through engineering problem solutions for tutorial groups of 100+ students, explaining complex control system concepts clearly and effectively.",
-          "Guided students through control system concepts including feedback control, Laplace transforms, root locus and frequency response analysis.",
-          "Mentored students in mechatronic design projects, assisting with system design, prototyping, testing and troubleshooting.",
-          "Provided one-on-one technical support to help students solve engineering problems and understand complex course material.",
-          "Assisted students in designing, building and evaluating mechatronic systems for final-year design projects.",
-          "Marked assignments, reports and project submissions while providing constructive technical feedback.",
-          "Facilitated discussions and workshops that encouraged problem solving, engineering thinking and collaborative project development."
+        "Delivered tutorials and practical sessions for 2nd-4th year mechatronics engineering courses, including Control Systems Implementation, Control Engineering and Mechatronic System Design Project I and II.",
+        "Presented lessons and worked through engineering problem solutions for tutorial groups of 100+ students, explaining complex control system concepts clearly and effectively.",
+        "Guided students through control system concepts including feedback control, Laplace transforms, root locus and frequency response analysis.",
+        "Mentored students in mechatronic design projects, assisting with system design, prototyping, testing and troubleshooting.",
+        "Provided one-on-one technical support to help students solve engineering problems and understand complex course material.",
+        "Assisted students in designing, building and evaluating mechatronic systems for final-year design projects.",
+        "Marked assignments, reports and project submissions while providing constructive technical feedback.",
+        "Facilitated discussions and workshops that encouraged problem solving, engineering thinking and collaborative project development."
       ]
     },
     {
@@ -92,11 +92,11 @@
       "endDate": "2022-02-01",
       "summary": "Review of Oil Reservoir Modelling Techniques <br> Microsoft Excel, Microsoft PowerPoint, Petrel, Eclipse, Data analysis, Document review, Presentation skills.",
       "highlights": [
-          "Reviewed documentation and modelling techniques used in oil reservoir simulations to identify opportunities to improve workflow consistency and modelling reliability.",
-          "Analysed existing engineering workflows and proposed process improvements to standardise modelling practices, improving predictability and efficiency of reservoir simulations.",
-          "Conducted technical research and evaluated modelling methodologies used across subsurface engineering teams.",
-          "Produced a technical report outlining recommended workflow improvements and standardisation strategies.",
-          "Presented findings and recommendations to engineering teams in a company-wide presentation, communicating technical insights and process improvements."
+        "Reviewed documentation and modelling techniques used in oil reservoir simulations to identify opportunities to improve workflow consistency and modelling reliability.",
+        "Analysed existing engineering workflows and proposed process improvements to standardise modelling practices, improving predictability and efficiency of reservoir simulations.",
+        "Conducted technical research and evaluated modelling methodologies used across subsurface engineering teams.",
+        "Produced a technical report outlining recommended workflow improvements and standardisation strategies.",
+        "Presented findings and recommendations to engineering teams in a company-wide presentation, communicating technical insights and process improvements."
       ]
     }
   ],
@@ -189,8 +189,7 @@
       "icon": "fa-solid fa-laptop"
     }
   ],
-  "publications": [
-  ],
+  "publications": [],
   "skills": [
     {
       "name": "Software Development",
@@ -274,38 +273,32 @@
     {
       "name": "PCB Design and Electronics",
       "icon": "fa-solid fa-lightbulb",
-      "keywords": [
-      ]
+      "keywords": []
     },
     {
       "name": "3D Printing",
       "icon": "fa-solid fa-wrench",
-      "keywords": [
-      ]
+      "keywords": []
     },
     {
       "name": "Robotics and Automation",
       "icon": "fa-solid fa-robot",
-      "keywords": [
-      ]
+      "keywords": []
     },
     {
       "name": "Reading",
       "icon": "fa-solid fa-book",
-      "keywords": [
-      ]
+      "keywords": []
     },
     {
       "name": "Guitar",
       "icon": "fa-solid fa-guitar",
-      "keywords": [
-      ]
+      "keywords": []
     },
     {
       "name": "Swimming",
       "icon": "fa-solid fa-swimmer",
-      "keywords": [
-      ]
+      "keywords": []
     }
   ],
   "references": [

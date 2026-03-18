@@ -105,8 +105,10 @@ layout: default
                   {% include resume/awards.liquid %}
                 {% when 'skills' %}
                   {% include resume/skills.liquid %}
-                {% comment %} {% when 'publications' %}
-                  {% include resume/publications.liquid %} {% endcomment %}
+                  {% comment %}
+                    {% when 'publications' %}
+                    {% include resume/publications.liquid %}
+                  {% endcomment %}
                 {% when 'languages' %}
                   {% include resume/languages.liquid %}
                 {% when 'interests' %}
