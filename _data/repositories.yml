@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - NadiaRegli
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - NadiaRegli/doppler-simple
+  - NadiaRegli/NadiaRegli.github.io
+  - NadiaRegli/ros2-course-1
+  - NadiaRegli/gift-game

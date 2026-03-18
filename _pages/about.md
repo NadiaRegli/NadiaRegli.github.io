@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Be the change you wish to see in the world.
+subtitle: Mechatronics engineer building intelligent hardware-software systems.
 
 profile:
   align: right
@@ -27,12 +27,18 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Nadia Regli, a Mechatronics Engineering graduate from the University of Queensland and a Technology Consultant at Ernst & Young. I specialise in robotics and software engineering, with a strong focus on developing innovative, real-world solutions that improve lives.
+Hi, I'm Nadia Regli, a Mechatronics Engineer from the University of Queensland with a passion for building intelligent physical systems that combine electronics, software, and mechanical design.
 
-My background spans hands-on robotics projects and full-stack software development. At Universal Field Robots, I contributed to building an autonomous underground mining robot using ROS II, C++ and Python. My honours thesis explored enhancing LiDAR SLAM localisation in feature-deficient environments using Doppler velocity data, an experience that deepened my passion for robotics perception and elegant control systems.
+My background spans electronics design, robotics, and embedded systems, alongside professional experience in software and robotics engineering. I enjoy working across the full engineering stack, from designing circuits and prototyping hardware to developing the software that brings systems to life.
 
-Currently, at EY, I work as a full-stack developer on a major Australian health insurance platform, implementing complex user-facing and backend features using Vue.js and C#. I collaborate across CMS and EAI teams, fix defects raised by QA, and manage codebases using Git and Azure DevOps.
+During my studies, I designed electrical schematics and PCBs in Altium Designer, developed mechanical components in Autodesk Inventor, and built and tested electronic prototypes through hands-on hardware development. My projects included designing and simulating mixed-signal circuits for an ECG device, as well as developing sensing and control systems for an autonomous robotic defence platform.
 
-My approach is thoughtful, organised, and proactive. I enjoy contributing to high-impact projects and collaborating with driven, purpose-led teams, especially in robotics, where technology directly improves how we live and work.
+I also worked as a Robotics Engineer with Universal Field Robots, contributing to the development of an autonomous underground mining robot using ROS2, C++, and Python. This work involved integrating sensors, implementing path planning algorithms, and debugging complex hardware-software systems in Linux (Ubuntu) environments.
 
-Let’s build something meaningful together.
+Currently, I work as a Digital Engineering Technology Consultant at EY, where I develop full-stack applications using JavaScript frameworks, in particular Vue.js and C#. While this role focuses on software, it has strengthened my skills in system architecture, debugging complex systems, building reliable production-grade solutions, demonstrating technical work to both engineering teams and C-suite client executives, and collaborating across cross-functional teams and vendors. These skills translate strongly to robotics, embedded systems development, and delivering real-world engineering solutions.
+
+I'm particularly interested in opportunities involving electronics design, robotics, embedded systems, and hardware-software integration, where I can apply both my hands-on engineering background and software expertise to build real-world systems.
+
+I am motivated by the opportunity to contribute to technologies that solve meaningful problems and improve how people live and work.
+
+

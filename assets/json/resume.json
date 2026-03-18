@@ -1,200 +1,350 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Nadia Regli",
+    "label": "Mechatronics Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "nadia.regli166@gmail.com",
+    "phone": "(+61) 447 727 138",
+    "url": "https://nadiaregli.github.io/",
+    "summary": "A Mechatronics Engineer with a Bachelor of Engineering (Hons) from the University of Queensland and two years of professional experience in software development and robotics. My background combines strong programming skills, a solid foundation in robotics, electronics and systems integration, and experience with project management and collaboration in team-based engineering environments. I am seeking an engineering role where I can apply both hardware and software knowledge to develop automation, robotics or embedded systems.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Brisbane",
+      "countryCode": "AUS",
+      "region": "Queensland"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Github",
+        "username": "NadiaRegli",
+        "url": "https://github.com/NadiaRegli/"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "",
+        "url": "https://www.linkedin.com/in/nadia-regli/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Ernst & Young",
+      "position": "Digital Engineering Technology Consultant",
+      "url": "",
+      "startDate": "2024-05-01",
+      "endDate": "",
+      "summary": "Enterprise CMS Platform - Leading Australian Health Insurance Provider <br> Vue.js, C#, Kentico CMS, Azure, Azure DevOps, Azure AD B2C, Jira, Confluence.",
+      "highlights": [
+          "Developed and delivered full-stack features across the public website, member portal and consultant portal for a major Australian health insurance provider.", 
+          "Investigated and resolved application defects across front-end and back-end systems, improving platform stability and user experience.", 
+          "Diagnosed and resolved issues in Azure Function Apps and backend APIs, ensuring reliable integration across distributed cloud services.", 
+          "Implemented multi-factor authentication within the website sign-in flow using Azure AD B2C, improving platform security.", 
+          "Delivered a Kentico CMS platform migration to a newer version to maintain platform support and long-term maintainability.", 
+          "Tested and deployed API updates across development environments using Azure DevOps pipelines.", 
+          "Conducted code reviews and testing improvements to maintain high-quality, maintainable code across the development team.", 
+          "Produced technical documentation to support maintainability, onboarding and knowledge sharing within the engineering team.", 
+          "Presented and demonstrated technical solutions to senior stakeholders and C-suite client representatives, translating technical implementations into clear business outcomes.", 
+          "Mentored new team members and coordinated with cross-functional teams to deliver integrated platform improvements.", 
+          "Organised team engagement initiatives that strengthened collaboration and team culture."
+      ]
+    },
+    {
+      "name": "Universal Field Robots",
+      "position": "Robotics Engineer Undergraduate",
+      "url": "",
+      "startDate": "2023-07-01",
+      "endDate": "2023-12-01",
+      "summary": "Autonomous Mining Robots <br> ROS, ROS2, Python, C++, Gazebo, RViz, Linux, Git.",
+      "highlights": [
+          "Developed robotics software in Python and C++ with a Linux (Ubuntu) environment using ROS architecture.",
+          "Developed a navigation path planning and parking algorithm for autonomous robot positioning and docking.",
+          "Designed interfaces and signal filtering for wheel weight sensors to detect load distribution and improve sensor data reliability.",
+          "Migrated robotics software from ROS to ROS2, improving system modularity and compatibility with modern robotics frameworks.",
+          "Visualised and tested robot behaviour using RViz and Gazebo simulation environments to validate navigation and system performance.",
+          "Processed and analysed sensor data to diagnose system behaviour and support robotics problem solving.",
+          "Collaborated with robotics engineers in team meetings and technical discussions to develop solutions for underground and open-cut mining robotics applications."
+      ]
+    },
+    {
+      "name": "The University of Queensland",
+      "position": "Academic Tutor",
+      "url": "",
+      "startDate": "2023-02-01",
+      "endDate": "2023-12-01",
+      "summary": "Tutor for 2nd-4th year mechatronics engineering courses <br> Control systems, Mechatronics design, Engineering education.",
+      "highlights": [
+          "Delivered tutorials and practical sessions for 2nd-4th year mechatronics engineering courses, including Control Systems Implementation, Control Engineering and Mechatronic System Design Project I and II.",
+          "Presented lessons and worked through engineering problem solutions for tutorial groups of 100+ students, explaining complex control system concepts clearly and effectively.",
+          "Guided students through control system concepts including feedback control, Laplace transforms, root locus and frequency response analysis.",
+          "Mentored students in mechatronic design projects, assisting with system design, prototyping, testing and troubleshooting.",
+          "Provided one-on-one technical support to help students solve engineering problems and understand complex course material.",
+          "Assisted students in designing, building and evaluating mechatronic systems for final-year design projects.",
+          "Marked assignments, reports and project submissions while providing constructive technical feedback.",
+          "Facilitated discussions and workshops that encouraged problem solving, engineering thinking and collaborative project development."
+      ]
+    },
+    {
+      "name": "Santos",
+      "position": "Oil Subsurface Engineer Undergraduate",
+      "url": "",
+      "startDate": "2021-11-01",
+      "endDate": "2022-02-01",
+      "summary": "Review of Oil Reservoir Modelling Techniques <br> Microsoft Excel, Microsoft PowerPoint, Petrel, Eclipse, Data analysis, Document review, Presentation skills.",
+      "highlights": [
+          "Reviewed documentation and modelling techniques used in oil reservoir simulations to identify opportunities to improve workflow consistency and modelling reliability.",
+          "Analysed existing engineering workflows and proposed process improvements to standardise modelling practices, improving predictability and efficiency of reservoir simulations.",
+          "Conducted technical research and evaluated modelling methodologies used across subsurface engineering teams.",
+          "Produced a technical report outlining recommended workflow improvements and standardisation strategies.",
+          "Presented findings and recommendations to engineering teams in a company-wide presentation, communicating technical insights and process improvements."
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Australian Business and Community Network (ABCN)",
+      "location": "Brisbane, Australia",
+      "position": "Mentor",
+      "url": "https://abcn.com.au/",
+      "startDate": "2026-03-24",
+      "endDate": "2026-12-24",
+      "summary": "Volunteered for the ABCN Dulili Program to mentor First Nations students, beginning Year 9 and continuing to Year 10, Designed for, and in consultation with First Nations young people.",
+      "highlights": [
+        "Guided students in the group on how to effectively complete activities and tasks.",
+        "Encouraged active participation of group members in broader discussion.",
+        "Acted as a positive role model through sharing my own experiences and insights to support students in their personal and academic development."
+      ]
+    },
+    {
+      "organization": "Rachie's Ratirement Home",
+      "location": "Brisbane, Australia",
+      "position": "Volunteer and Foster Carer",
+      "url": "https://www.rachiesratirementhome.com/",
+      "startDate": "2024-03-10",
+      "endDate": "2024-05-13",
+      "summary": "Volunteered for a registered charity that provides care and shelter for rodents in need. Responsibilities included providing daily care, socialisation and fostering of rats to support their wellbeing and rehoming efforts.",
+      "highlights": [
+        "Provided weekly care, cleaning, feeding for the rescue rodents, ensuring their health and wellbeing while supporting the charity's mission to provide shelter and care for rats in need.",
+        "Fostered rodents in need of temporary care, providing a safe and nurturing environment to support their rehabilitation and rehoming efforts.",
+        "Coordinated with the transport of rodents to veterinary appointments, ensuring they received necessary medical care and support for their health and wellbeing."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "The University of Queensland",
+      "location": "Brisbane, Australia",
+      "url": "https://www.uq.edu.au/",
+      "area": "Mechatronics Engineering",
+      "studyType": "Bachelor of Engineering (Hons)",
+      "startDate": "2019-01-01",
+      "endDate": "2023-11-01",
+      "score": "",
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Team Outstanding Performance and Design",
+      "date": "2020-05-01",
+      "awarder": "Faculty of Engineering, The University of Queensland",
+      "url": "",
+      "summary": "Received award for Outstanding Performance and Design for an engineering project."
+    },
+    {
+      "title": "Dean's Award for Engineering",
+      "date": "2018-11-01",
+      "awarder": "Faculty of Engineering, Queensland University of Technology",
+      "url": "https://www.qut.edu.au/study/engineering-events?id=200951",
+      "summary": "The Faculty of Engineering rewards a year 11 and a year 12 Engineering, Design and Indigenous Australian Queensland* student with the highest academic result in their cohort."
+    },
+    {
+      "title": "First in Engineering and Summa Cum Laude for Academic Excellence",
+      "date": "2018-11-01",
+      "awarder": "Somerset College",
+      "url": "",
+      "summary": "Awarded for receiving a Cum Laude Award in all eligible semesters, indicating consistent, highest-level achievement."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Baseline Security Clearance",
+      "date": "2024-05-01",
+      "issuer": "Australian Government",
+      "url": "",
+      "icon": "fa-solid fa-shield-halved"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "ROS2 Course Certification",
+      "date": "2026-03-01",
+      "issuer": "Udemy",
+      "url": "",
+      "icon": "fa-solid fa-robot"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "Developers Headless Shopify",
+      "date": "2025-01-01",
+      "issuer": "Shopify",
+      "url": "",
+      "icon": "fa-solid fa-laptop"
     }
   ],
   "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Software Development",
+      "level": "",
+      "icon": "",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "C++",
+        "ROS 1",
+        "ROS 2",
+        "Linux (Ubuntu)",
+        "Git",
+        "Azure DevOps",
+        "JavaScript",
+        "Vue.js",
+        "C#",
+        "Kentico CMS",
+        "Azure AD B2c",
+        "Shopify",
+        "HTML/CSS",
+        "MATLAB"
+      ]
+    },
+    {
+      "name": "Electronics",
+      "level": "",
+      "icon": "",
+      "keywords": [
+        "Altium Designer",
+        "LTSpice",
+        "Fritzing",
+        "Soldering and prototyping tools",
+        "Experience with circuit design, PCB layout and prototyping for mechatronic systems.",
+        "Experience with signal processing and sensor integration for mechatronic systems.",
+        "Experience with testing, debugging and troubleshooting of electronic systems for mechatronic applications.",
+        "Experience with microcontroller programming and embedded systems development for mechatronic applications."
+      ]
+    },
+    {
+      "name": "Mechanical",
+      "level": "",
+      "icon": "",
+      "keywords": [
+        "Autodesk Inventor",
+        "SolidWorks",
+        "Ultimaker Cura",
+        "Experience with mechanical design, prototyping and testing for mechatronic systems.",
+        "Experience with 3D printing and CNC machining for rapid prototyping of mechanical components.",
+        "Experience with mechanical system integration and testing for mechatronic applications."
+      ]
+    },
+    {
+      "name": "Project Management and Collaboration",
+      "level": "",
+      "icon": "",
+      "keywords": [
+        "Jira",
+        "Confluence",
+        "Agile Project Management",
+        "Experience mentoring and supporting junior team members in software development",
+        "Experience demonstrating technical solutions and communicating technical concepts to C-suite stakeholders and non-technical audiences.",
+        "Experience collaborating with cross-functional teams and vendors to deliver integrated solutions and improvements.",
+        "Experience producing technical documentation to support maintainability and knowledge sharing within engineering teams.",
+        "Experience creating team engagement initiatives to strengthen team culture and collaboration."
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "fa-solid fa-language"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "language": "German",
+      "fluency": "Beginner",
+      "icon": "fa-solid fa-language"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "PCB Design and Electronics",
+      "icon": "fa-solid fa-lightbulb",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+      ]
+    },
+    {
+      "name": "3D Printing",
+      "icon": "fa-solid fa-wrench",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Robotics and Automation",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Reading",
+      "icon": "fa-solid fa-book",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Guitar",
+      "icon": "fa-solid fa-guitar",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Swimming",
+      "icon": "fa-solid fa-swimmer",
+      "keywords": [
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Zachary Giofkou",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Senior Software Engineer at Ernst & Young <br> zachary.giofkou@yahoo.com.au <br> (+61) 422 293 700"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Tim Cassell",
+      "icon": "fa-solid fa-robot",
+      "reference": "Robotics Engineer at Universal Field Robots <br> tim.cassell@universalfieldrobots.com.au <br> (+61) 448 762 237"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Underground AutoPrep Robot - UFR",
+      "summary": "Contributed to robotics software development for an autonomous underground mining robot, using Python and C++ in a Linux environment with ROS II. Gained experience with mining-specific robotic applications, particularly path-planning in underground spaces, and collaborated in team-based project discussions and implementations.",
+      "highlights": ["ROS 2, C++, Python"]
+    },
+    {
+      "name": "Health Insurance Website - EY",
+      "summary": "Worked as a full-stack developer on both the CMS and EAI team for a leading Australian health insurance provider. Built and maintained front-end and back-end features using Vue.js and C#, ensuring smooth user experience across member, consultant and public portals.",
+      "highlights": ["Vue.js, C#, Agile project management"]
+    },
+    {
+      "name": "SLAM LiDAR Honours Thesis - UQ",
+      "summary": "Proposed and implemented Doppler-SiMpLE, a scanstitching algorithm that uses per-point Doppler velocity data from LiDAR sensors to improve localisation in geometrically-deficient environments like tunnels.",
+      "highlights": ["C++, LiDAR integration, Report writing"]
+    },
+    {
+      "name": "Autonomous Robot Defence System - UQ",
+      "summary": "Designed an autonomous robotic defence system to identify IR targets and simulate their elimination by firing a laser pointer at the target. I was responsible for the electrical schematics, PCB Design and CAD of the chassis.",
+      "highlights": ["Altium Designer, Autodesk Inventor"]
+    },
+    {
+      "name": "ECG Design and Prototype - UQ",
+      "summary": "Designed, simulated, built and tested the electronics and processing for an ECG machine. Practiced electrical design, testing, analysis and signal processing.",
+      "highlights": ["LTSpice, Electrical prototyping"]
     }
   ]
 }
