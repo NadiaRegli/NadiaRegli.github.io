@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A growing collection of personal projects. <br><br> 🚧 Work in Progress - Some projects are currently being uploaded to the portfolio. Check back soon to see the completed write-ups!
 nav: false
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [mechatronics, software, personal]
 horizontal: false
 sitemap: false
 ---
