@@ -3,11 +3,10 @@ layout: page
 title: projects
 permalink: /projects/
 description: A growing collection of personal projects. <br><br> 🚧 Work in Progress - Some projects are currently being uploaded to the portfolio. Check back soon to see the completed write-ups!
-nav: false
+nav: true
 nav_order: 2
 display_categories: [mechatronics, software, personal]
 horizontal: false
-sitemap: false
 ---
 
 <!-- pages/projects.md -->
