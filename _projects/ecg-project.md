@@ -25,12 +25,12 @@ The complete signal chain comprised a two-stage instrumentation amplifier (gain 
 ## Project Objectives
 
 The project was designed to integrate techniques from the BIOE6403 course into a tangible biomedical application. The specific objectives were:
-•	Design and simulate a front-end instrumentation amplifier with a minimum differential voltage gain of 500.
-•	Design and simulate a Bessel bandpass filter (2nd order HPF at 0.5 Hz, 4th order LPF at 40 Hz) to isolate the ECG frequency band.
-•	Design a DC offset amplifier to shift the filtered ECG signal into the 0–3.3 V input range of the Teensy ADC.
-•	Digitise the conditioned ECG at an appropriate sampling frequency.
-•	Implement a digital QRS detection algorithm in MATLAB and validate it against the MIT-BIH arrhythmia database.
-•	Port the algorithm to a Teensy microcontroller for real-time R wave detection, with oscilloscope and LED output.
+- Design and simulate a front-end instrumentation amplifier with a minimum differential voltage gain of 500.
+- Design and simulate a Bessel bandpass filter (2nd order HPF at 0.5 Hz, 4th order LPF at 40 Hz) to isolate the ECG frequency band.
+- Design a DC offset amplifier to shift the filtered ECG signal into the 0–3.3 V input range of the Teensy ADC.
+- Digitise the conditioned ECG at an appropriate sampling frequency.
+- Implement a digital QRS detection algorithm in MATLAB and validate it against the MIT-BIH arrhythmia database.
+- Port the algorithm to a Teensy microcontroller for real-time R wave detection, with oscilloscope and LED output.
 
 ## System Architecture
 The system follows a linear signal chain from the body surface to a digital output decision, as illustrated below:
@@ -139,8 +139,8 @@ Common mode simulation: A 1 Vpp common-mode signal was applied to both inputs si
 A Bessel filter topology was selected for both the high-pass and low-pass stages. The Bessel filter is preferred in ECG applications because of its maximally flat group delay (linear phase response), which preserves the morphology of the QRS complex waveform. Other filter types such as Butterworth or Chebyshev introduce phase nonlinearities that can distort the sharp rising edge of the R wave, potentially affecting detection accuracy.
 
 The filter specifications were:
-•	High-pass filter: 2nd order Bessel, −3 dB cutoff ≈ 0.5 Hz (to remove baseline wander)
-•	Low-pass filter: 4th order Bessel, −3 dB cutoff ≈ 40 Hz (to attenuate EMG noise and mains interference above the ECG band)
+- High-pass filter: 2nd order Bessel, −3 dB cutoff ≈ 0.5 Hz (to remove baseline wander)
+- Low-pass filter: 4th order Bessel, −3 dB cutoff ≈ 40 Hz (to attenuate EMG noise and mains interference above the ECG band)
 
 Component values were calculated using the Horowitz and Hill method. Capacitor values were chosen first (C = 1 µF throughout, a standard preferred value), and then resistor values were calculated from the required cutoff frequencies and Bessel polynomial coefficients, using combinations of preferred resistor values to achieve the required accuracy.
 
@@ -235,30 +235,30 @@ The Pan-Tompkins algorithm [Pan & Tompkins, IEEE Trans. Biomed. Eng., 1985] was 
 
 ### Signal Processing Pipeline
 The algorithm processes the digitised ECG through five sequential stages before applying the decision rule:
-•	Low-pass filter: An IIR filter (H(z) = (1−z⁻⁶)² / (1−z⁻¹)²) removes high-frequency noise above the QRS band.
-•	High-pass filter: An IIR filter (H(z) = (−1 + 32z⁻¹⁶ + z⁻³²) / (1+z⁻¹)) removes baseline wander below the QRS band.
-•	Derivative filter: A five-point derivative (h = [−1, −2, 0, 2, 1] × 1/8) highlights the steep slopes characteristic of QRS complexes.
-•	Squaring: The derivative output is squared, amplifying large slopes and suppressing small ones, making QRS peaks more prominent.
-•	Moving window integration (MWI): A 150 ms moving average integrates the squared signal, producing a smoother envelope that is easier to threshold.
+- Low-pass filter: An IIR filter (H(z) = (1−z⁻⁶)² / (1−z⁻¹)²) removes high-frequency noise above the QRS band.
+- High-pass filter: An IIR filter (H(z) = (−1 + 32z⁻¹⁶ + z⁻³²) / (1+z⁻¹)) removes baseline wander below the QRS band.
+- Derivative filter: A five-point derivative (h = [−1, −2, 0, 2, 1] × 1/8) highlights the steep slopes characteristic of QRS complexes.
+- Squaring: The derivative output is squared, amplifying large slopes and suppressing small ones, making QRS peaks more prominent.
+- Moving window integration (MWI): A 150 ms moving average integrates the squared signal, producing a smoother envelope that is easier to threshold.
 
 Following the MWI, a fiducial mark step locates candidate peaks with a minimum separation of 200 ms (40 samples at 200 Hz), enforcing the physiological constraint that valid RR intervals cannot be shorter than this.
 
 ### Adaptive Decision Rules
 The decision stage uses dual adaptive thresholds (one applied to the MWI output and one to the bandpass-filtered signal) that are continuously updated based on the running estimates of signal level and noise level:
-•	THR_SIG = Noise_Level + 0.25 × |Signal_Level − Noise_Level|: the primary detection threshold.
-•	THR_NOISE = 0.5 × THR_SIG: the secondary noise classification threshold.
-•	T-wave discrimination: If a candidate peak occurs within 360 ms of the previous QRS, its slope is compared to that of the previous QRS. If the slope is less than half the previous QRS slope, the candidate is classified as a T wave and rejected.
-•	Searchback: If no QRS is detected within 1.66 × mean RR interval, the algorithm searches backward through the signal to recover any missed beats that may have fallen below the threshold.
+- THR_SIG = Noise_Level + 0.25 × |Signal_Level − Noise_Level|: the primary detection threshold.
+- THR_NOISE = 0.5 × THR_SIG: the secondary noise classification threshold.
+- T-wave discrimination: If a candidate peak occurs within 360 ms of the previous QRS, its slope is compared to that of the previous QRS. If the slope is less than half the previous QRS slope, the candidate is classified as a T wave and rejected.
+- Searchback: If no QRS is detected within 1.66 × mean RR interval, the algorithm searches backward through the signal to recover any missed beats that may have fallen below the threshold.
 
 Both signal and noise level estimates are updated using a weighted average after each detection decision, allowing the algorithm to track gradual changes in ECG amplitude throughout the recording.
 
 ### MIT-BIH Database Validation
 The MATLAB implementation was validated against the MIT-BIH Noise Stress Test Database (NSTDB). The clean reference recording nsrdb_001 (300 seconds of Lead II normal sinus rhythm) was used to establish the true R wave count. The algorithm was then run against five noise-contaminated versions of the same recording at 0 dB SNR:
-•	nstdb_001_baseline_0dB: Baseline wander noise
-•	nstdb_001_combo_0dB: Combined noise (all types superimposed)
-•	nstdb_001_emg_0dB: EMG (muscle artefact) noise
-•	nstdb_001_mains_0dB: 50 Hz mains interference
-•	nstdb_001_motion_0dB: Motion artefact noise
+- nstdb_001_baseline_0dB: Baseline wander noise
+- nstdb_001_combo_0dB: Combined noise (all types superimposed)
+- nstdb_001_emg_0dB: EMG (muscle artefact) noise
+- nstdb_001_mains_0dB: 50 Hz mains interference
+- nstdb_001_motion_0dB: Motion artefact noise
 
 The Pan-Tompkins algorithm performed exceptionally well across nearly all noise conditions. The algorithm achieved 100% sensitivity on every noise file, meaning no true QRS complexes were missed, and 100% PPV on four of the five noisy conditions. The only notable reduction in performance was in the combined noise file (all noise types superimposed), where 40 false positive detections occurred, reducing PPV to 93.07%. A single false positive also appeared in the EMG noise condition (PPV 99.81%). Notably, baseline wander, mains interference, and motion artefact each produced zero false positives, demonstrating that the bandpass filter and adaptive thresholding effectively neutralised these noise types at 0 dB SNR.
 
@@ -268,9 +268,9 @@ The Teensy microcontroller received the analog-conditioned ECG signal on analogu
 
 ### Detection Algorithm
 The Teensy detection algorithm used a two-sample slope-based approach optimised for real-time single-sample processing. At each sample, the algorithm compared the current and previous ADC readings to detect the characteristic peak of an R wave:
-•	Both the current and previous samples must exceed the threshold value (threshold_voltage = 2.0 V → threshold_value ≈ 620 counts) to confirm the signal is in the QRS amplitude range.
-•	The difference between consecutive samples (diff = data_new − data_old) must be positive (rising edge) and below diff_threshold = 120 counts, identifying the moment the signal reaches its peak (slope near zero after a rise).
-•	A minimum gap of gap_num = sampling_ratio / max_bit_per_second = 400/4 = 100 samples (250 ms at 400 Hz sample rate on the Teensy) was enforced between detections to prevent repeated triggering on a single R wave.
+- Both the current and previous samples must exceed the threshold value (threshold_voltage = 2.0 V → threshold_value ≈ 620 counts) to confirm the signal is in the QRS amplitude range.
+- The difference between consecutive samples (diff = data_new − data_old) must be positive (rising edge) and below diff_threshold = 120 counts, identifying the moment the signal reaches its peak (slope near zero after a rise).
+- A minimum gap of gap_num = sampling_ratio / max_bit_per_second = 400/4 = 100 samples (250 ms at 400 Hz sample rate on the Teensy) was enforced between detections to prevent repeated triggering on a single R wave.
 
 The sampling rate on the Teensy was set to 400 Hz (delay of 2.5 ms per loop iteration), with the ADC reading, detection logic, serial output, and DAC write all completing within this interval.
 
@@ -288,12 +288,12 @@ The CMRR of the physical circuit, while not quantitatively measured in the final
 
 ### How Would You Improve the System? 
 Several improvements could enhance the robustness and clinical utility of the system:
-•	Resistor precision: Replacing the ±5% tolerance resistors in the instrumentation amplifier with 0.1% precision resistors would significantly improve CMRR and reduce common-mode noise pickup in practical use.
-•	Right-leg drive circuit: Adding an active driven-right-leg (DRL) circuit would further suppress common-mode interference, particularly 50/60 Hz mains noise, which is the dominant artefact in real clinical environments.
-•	Notch filter: A 50 Hz notch filter could be added between the bandpass filter and the offset stage to provide additional attenuation of mains interference without significantly affecting QRS morphology.
-•	Improved Teensy algorithm: The slope-based peak detector on the Teensy, while effective in low-noise conditions, could be replaced with a full embedded Pan-Tompkins implementation for greater robustness. The MATLAB algorithm demonstrated that the full adaptive thresholding and searchback logic provides substantially better noise immunity than a simple amplitude threshold.
-•	PCB implementation: Moving from a breadboard to a custom PCB would reduce parasitic capacitances, improve signal integrity, and allow the circuit to be miniaturised into a wearable form factor.
-•	Battery monitoring: Adding low-battery detection would prevent the amplifier supply voltage from drifting during use, which could otherwise affect gain calibration.
+- Resistor precision: Replacing the ±5% tolerance resistors in the instrumentation amplifier with 0.1% precision resistors would significantly improve CMRR and reduce common-mode noise pickup in practical use.
+- Right-leg drive circuit: Adding an active driven-right-leg (DRL) circuit would further suppress common-mode interference, particularly 50/60 Hz mains noise, which is the dominant artefact in real clinical environments.
+- Notch filter: A 50 Hz notch filter could be added between the bandpass filter and the offset stage to provide additional attenuation of mains interference without significantly affecting QRS morphology.
+- Improved Teensy algorithm: The slope-based peak detector on the Teensy, while effective in low-noise conditions, could be replaced with a full embedded Pan-Tompkins implementation for greater robustness. The MATLAB algorithm demonstrated that the full adaptive thresholding and searchback logic provides substantially better noise immunity than a simple amplitude threshold.
+- PCB implementation: Moving from a breadboard to a custom PCB would reduce parasitic capacitances, improve signal integrity, and allow the circuit to be miniaturised into a wearable form factor.
+- Battery monitoring: Adding low-battery detection would prevent the amplifier supply voltage from drifting during use, which could otherwise affect gain calibration.
 
 ## Conclusion
 This project successfully demonstrated the design and implementation of a complete ECG acquisition and R wave detection system, integrating analog circuit design, digital signal processing, and embedded programming into a functioning biomedical instrument. The system achieved all specified design targets: a front-end instrumentation amplifier with ×525 gain and high common-mode rejection, a Bessel bandpass filter correctly shaping the 0.5–40 Hz ECG band, an offset amplifier precisely conditioning the signal for the Teensy ADC, and a real-time Pan-Tompkins QRS detector producing live R wave detection output demonstrated on a human subject.
