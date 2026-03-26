@@ -8,4 +8,3 @@ category: mechatronicss
 ---
 
 > 🚧 **Work in Progress** - This project is currently being uploaded to the portfolio. Check back soon to see the completed write-up!
-

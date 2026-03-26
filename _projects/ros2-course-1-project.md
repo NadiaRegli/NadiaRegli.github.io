@@ -26,6 +26,7 @@ A complete robotics project built with **ROS 2** using the **Turtlesim** simulat
 ## Architecture
 
 The system is composed of **3 nodes** that communicate via topics and services:
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/ros2-course-1/architecture.png" title="RQT Graph Final Result" class="img-fluid rounded z-depth-1" %}
@@ -41,10 +42,10 @@ The system is composed of **3 nodes** that communicate via topics and services:
 
 Custom message and service types were created in the `my_robot_interfaces` package:
 
-| Interface | Type | Purpose |
-|-----------|------|---------|
-| `Turtle.msg` | Message | Holds a single turtle's name, x, and y coordinates |
-| `TurtleArray.msg` | Message | Array of `Turtle` messages for the `/alive_turtles` topic |
+| Interface         | Type    | Purpose                                                     |
+| ----------------- | ------- | ----------------------------------------------------------- |
+| `Turtle.msg`      | Message | Holds a single turtle's name, x, and y coordinates          |
+| `TurtleArray.msg` | Message | Array of `Turtle` messages for the `/alive_turtles` topic   |
 | `CatchTurtle.srv` | Service | Sends the name of a caught turtle from controller → spawner |
 
 ---
@@ -134,6 +135,7 @@ ros2 launch my_robot_bringup turtle_catcher.launch.xml
 <div class="col-md-6" markdown="1">
 
 #### ROS 2 Core Concepts
+
 - **Nodes & multi-node architecture** — designing a system with clear separation of concerns
 - **Topics** (pub/sub) — real-time data streaming between nodes
 - **Services** (client/server) — request/response communication for discrete actions
@@ -143,6 +145,7 @@ ros2 launch my_robot_bringup turtle_catcher.launch.xml
 <div class="col-md-6" markdown="1">
 
 #### Robotics & Software Engineering
+
 - **Proportional (P) control** — implementing a control loop for autonomous navigation
 - **Coordinate geometry** — computing distances and angles with `atan2`
 - **Parameters & launch files** — making the system configurable and scalable
