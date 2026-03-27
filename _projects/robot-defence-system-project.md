@@ -52,9 +52,11 @@ The robot integrated DC motor control, IR-based laser turret sensing and actuati
 </div>
 
 ## Individual Contribution
+
 ### Scope of Work
 
 My contribution encompassed the full PCB design pipeline, from schematic capture through to physical assembly and verification. Specifically, this included:
+
 - Self-directed learning of Altium Designer through approximately 20 hours of tutorial content, applied directly to the project schematic and layout.
 - Integration of the motor control circuit and IR turret circuit, supplied by other team members, into a unified schematic, incorporating all power regulation requirements.
 - Creation of all component schematic symbols and PCB footprints from scratch, cross-referenced against manufacturer datasheets to ensure dimensional accuracy.
@@ -67,16 +69,16 @@ My contribution encompassed the full PCB design pipeline, from schematic capture
 
 The following design decisions were made to optimise the electrical performance, physical layout, and manufacturability of the PCB:
 
-| Design Decision | Justification | Technical Basis |
-| --- | --- | --- |
-| Split into two PCBs (main + turret) | Reduced wire run length from turret components and simplified routing on the main board. | Original single-PCB design required 11 long wires from the turret. Splitting the design to a dedicated turret PCB reduced these to short, grouped connections via a 10-way male header. |
-| M3 mounting holes on all PCB corners | Enabled stable mechanical fastening to the robot chassis. | M3 screws selected as the smallest readily available fastener size; M2 screws are difficult to source. |
-| Male headers for sensor and inter-PCB connections | Reduced PCB footprint and improved routing neatness. | Male headers (6mm x 6mm) are significantly smaller than two-way terminal blocks (10mm x 8.3mm), freeing routing space. |
-| Terminal blocks retained for DC motors and power supply | Higher current and voltage demands required more robust connections than male headers. | DC motors draw a maximum stall current of 2.1A; power supply operates at 12V DC, both exceeding what male headers are rated for. |
-| Ground plane used for all ground connections | Minimised electrical noise and interference caused by ground loops. | A contiguous ground plane forces the return current path directly beneath each trace, lowering loop inductance and reducing radiated noise. |
-| PCB dimensions: main 70mm x 80mm; turret 29mm x 29mm | Constrained by the existing chassis and 3D-printed turret head dimensions. | Turret head internal cavity: 30mm x 30mm; chassis footprint: approximately 100mm x 100mm. |
-| All pins and components labelled on silkscreen | Eliminated the need to cross-reference the schematic during physical assembly and wiring. | Increased PCB area from the design revision provided sufficient room for clear silkscreen labels on all connections. |
-| Manufacturing design rules adhered to throughout | Ensured the board could be manufactured at standard cost without speciality processes. | Min track/space: 6mil/6mil; 2 copper layers; 1oz copper; green solder mask; min drill 0.3mm; min annular ring 0.6mm. |
+| Design Decision                                         | Justification                                                                             | Technical Basis                                                                                                                                                                         |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Split into two PCBs (main + turret)                     | Reduced wire run length from turret components and simplified routing on the main board.  | Original single-PCB design required 11 long wires from the turret. Splitting the design to a dedicated turret PCB reduced these to short, grouped connections via a 10-way male header. |
+| M3 mounting holes on all PCB corners                    | Enabled stable mechanical fastening to the robot chassis.                                 | M3 screws selected as the smallest readily available fastener size; M2 screws are difficult to source.                                                                                  |
+| Male headers for sensor and inter-PCB connections       | Reduced PCB footprint and improved routing neatness.                                      | Male headers (6mm x 6mm) are significantly smaller than two-way terminal blocks (10mm x 8.3mm), freeing routing space.                                                                  |
+| Terminal blocks retained for DC motors and power supply | Higher current and voltage demands required more robust connections than male headers.    | DC motors draw a maximum stall current of 2.1A; power supply operates at 12V DC, both exceeding what male headers are rated for.                                                        |
+| Ground plane used for all ground connections            | Minimised electrical noise and interference caused by ground loops.                       | A contiguous ground plane forces the return current path directly beneath each trace, lowering loop inductance and reducing radiated noise.                                             |
+| PCB dimensions: main 70mm x 80mm; turret 29mm x 29mm    | Constrained by the existing chassis and 3D-printed turret head dimensions.                | Turret head internal cavity: 30mm x 30mm; chassis footprint: approximately 100mm x 100mm.                                                                                               |
+| All pins and components labelled on silkscreen          | Eliminated the need to cross-reference the schematic during physical assembly and wiring. | Increased PCB area from the design revision provided sufficient room for clear silkscreen labels on all connections.                                                                    |
+| Manufacturing design rules adhered to throughout        | Ensured the board could be manufactured at standard cost without speciality processes.    | Min track/space: 6mil/6mil; 2 copper layers; 1oz copper; green solder mask; min drill 0.3mm; min annular ring 0.6mm.                                                                    |
 
 ---
 
@@ -123,9 +125,11 @@ One discovered issue during integration was that the servo motor library conflic
 </div>
 
 ## Learning and Reflections
+
 ### Technical Skills Acquired
 
 This project represented my first experience with end-to-end PCB design. The key technical skills developed include:
+
 - Proficiency in Altium Designer - including schematic capture, footprint creation, PCB layout, design rule checking (DRC), and Gerber file generation.
 - Practical knowledge of PCB manufacturing constraints and how to design to a manufacturer’s specification.
 - Hands-on soldering skills, reinforced through the course’s soldering tutorials.
@@ -142,7 +146,7 @@ Additionally, the project highlighted the impact of component placement decision
 The most significant learning outcome of this course was gaining practical, industry-relevant experience with professional PCB design tooling. Altium Designer is widely used in the electronics industry, and developing working proficiency with it, including creating custom schematic symbols and footprints from datasheets, was a valuable and transferable outcome. The course would benefit from structured guided practicals covering the full design workflow, allowing all students to develop breadth of knowledge beyond their individual assigned domain.
 
 ## References
+
 - Altium Designer. (2020, October 25). Preventing Ground Loops in Your PCB Design. Retrieved from Altium: https://resources.altium.com/p/preventing-ground-loops-your-pcb-design
 
 - Bossche, P. V. (2005). SUBAT: An assessment of sustainable battery technology. Journal of Power Sources, 5–6.
-
