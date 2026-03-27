@@ -36,26 +36,26 @@ I was responsible for the **Actuation Subsystem**, which encompassed the deliver
 ## Design Process Overview
 
 The actuation subsystem was broken into discrete, sequentially addressable steps, each with identified challenges and cross-subsystem interfaces. This systematic approach ensured setbacks were anticipated early and design decisions were traceable and justified.
- 
-| Step | Task | Key Challenge |
-|------|------|---------------|
-| 1 | Mask measurement and rod orientation selection | Fitting mask loops within size constraints |
-| 2 | Proof of concept prototype | Validating feasibility before procuring components |
-| 3-5 | Iterative rod design (3D printed, coil, machined metal) | Tolerances, surface finish, mask alignment |
-| 6 | Rod selection based on testing | Reliability vs. capacity trade-off |
-| 7 | Motor selection via torque analysis | Balancing torque, size, and cost |
-| 8 | Motor mount design and manufacture | Structural rigidity and vibration minimisation |
-| 9-10 | Restocking mechanism design and assembly | Ease of use within housing constraints |
-| 11-12 | Full system testing | Code integration, fault recovery |
- 
+
+| Step  | Task                                                    | Key Challenge                                      |
+| ----- | ------------------------------------------------------- | -------------------------------------------------- |
+| 1     | Mask measurement and rod orientation selection          | Fitting mask loops within size constraints         |
+| 2     | Proof of concept prototype                              | Validating feasibility before procuring components |
+| 3-5   | Iterative rod design (3D printed, coil, machined metal) | Tolerances, surface finish, mask alignment         |
+| 6     | Rod selection based on testing                          | Reliability vs. capacity trade-off                 |
+| 7     | Motor selection via torque analysis                     | Balancing torque, size, and cost                   |
+| 8     | Motor mount design and manufacture                      | Structural rigidity and vibration minimisation     |
+| 9-10  | Restocking mechanism design and assembly                | Ease of use within housing constraints             |
+| 11-12 | Full system testing                                     | Code integration, fault recovery                   |
+
 ---
 
 ## Delivery Rod Design
 
 ### Constraints
- 
+
 The delivery rod was oriented along the 200 mm dimension of the enclosure to maximise mask capacity. Key design constraints included:
- 
+
 - Minimum thread pitch of 4 mm to accommodate mask ear loops
 - Maximum length of 200 mm (excluding motor, mount, and wall thickness)
 - Mounting height of at least 380 mm to allow masks to hang freely
@@ -63,7 +63,7 @@ The delivery rod was oriented along the 200 mm dimension of the enclosure to max
 - Smooth surface finish to prevent mask snagging
 
 ### Iteration 1: Proof of Concept
- 
+
 A skewer-and-string mockup was used to validate the core dispensing concept before any components were procured or fabricated.
 
 <div class="row justify-content-center">
@@ -76,7 +76,7 @@ A skewer-and-string mockup was used to validate the core dispensing concept befo
 </div>
 
 ### Iteration 2: 3D Printed Rods
- 
+
 A range of 3D printed rods were designed with varying thread profiles (triangular, buttress, square, and U-shaped) to identify the geometry most conducive to smooth, fault-free mask dispensing. Prior to printing full rods, a set of test shaft mounting holes at incremental sizes was printed to characterise the dimensional tolerances of the 3D printer and prevent material waste.
 
 <div class="row justify-content-center">
@@ -177,9 +177,9 @@ The final design combined the strengths of the previous two iterations: the smoo
 ---
 
 ## Motor Selection
- 
+
 ### Torque Analysis
- 
+
 The required motor torque was determined by analysing the frictional forces acting on the delivery rod. The mask ear loops are made from Spandex (polyurethane), which has a coefficient of friction of mu = 0.2. With 25 masks at 2.5 g each, the total load on the rod was 0.61 N. Using a free body diagram and static equilibrium:
 
 <div class="row justify-content-center">
@@ -195,17 +195,17 @@ The required motor torque was determined by analysing the frictional forces acti
 - Required friction force to overcome: F = 0.2 x 0.08296 = **16.59 mN**
 
 ### Motor Type Selection
- 
+
 A stepper motor was selected over servo and brushless DC motor alternatives based on the application requirements: precise position control, repeatability, low additional circuitry, low to medium acceleration, and low cost.
- 
-| Motor Type | Advantages | Disadvantages |
-|------------|------------|---------------|
-| Stepper Motor | High precision, high holding torque, no encoder required | Higher heat, low-to-medium acceleration |
-| Servo Motor | High speed, high torque, high dynamic response | Requires encoder, more expensive |
-| Brushless DC | High efficiency, minimised EMI | Requires encoder and complex driver electronics |
- 
+
+| Motor Type    | Advantages                                               | Disadvantages                                   |
+| ------------- | -------------------------------------------------------- | ----------------------------------------------- |
+| Stepper Motor | High precision, high holding torque, no encoder required | Higher heat, low-to-medium acceleration         |
+| Servo Motor   | High speed, high torque, high dynamic response           | Requires encoder, more expensive                |
+| Brushless DC  | High efficiency, minimised EMI                           | Requires encoder and complex driver electronics |
+
 ### Motor Comparison: NEMA17 vs 28BYJ-48
- 
+
 Two stepper motors were evaluated based on availability, size, torque, driver requirements, and mounting features.
 
 <div class="row justify-content-center">
@@ -227,7 +227,7 @@ Two stepper motors were evaluated based on availability, size, torque, driver re
 </div>
 
 The **28BYJ-48** was selected for its compact form factor (42 x 32 x 30 mm), which allowed for a longer delivery rod and therefore greater mask capacity per restock. Key specifications:
- 
+
 - Type: 4-phase, 5-wire unipolar stepper motor
 - Rated voltage: 5-12 V (compatible with all other system components)
 - Operating current: 240 mA (motor), 500 mA (driver)
@@ -245,20 +245,20 @@ The **28BYJ-48** was selected for its compact form factor (42 x 32 x 30 mm), whi
 </div>
 
 The same motor and driver combination was used for both the delivery rod and the dispenser door actuator.
- 
+
 ---
- 
+
 ## Motor Mount Design
- 
+
 The motor mount was 3D printed in PLA, selected over CNC machining due to its lower setup complexity for this application. CNC milling was reserved for components requiring tighter tolerances and greater structural robustness, such as the delivery rod itself.
- 
-| Manufacturing Method | Tolerance (mm) | Min. Layer Thickness (mm) | Max. Build Volume (mm) |
-|----------------------|----------------|--------------------------|------------------------|
-| CNC Milling | +/- 0.025 to 0.125 | 0.01 (cutting depth) | 2000 x 800 x 1000 |
-| Industrial FDM | +/- 0.5 | 0.8 to 1.0 | 900 x 600 x 900 |
- 
+
+| Manufacturing Method | Tolerance (mm)     | Min. Layer Thickness (mm) | Max. Build Volume (mm) |
+| -------------------- | ------------------ | ------------------------- | ---------------------- |
+| CNC Milling          | +/- 0.025 to 0.125 | 0.01 (cutting depth)      | 2000 x 800 x 1000      |
+| Industrial FDM       | +/- 0.5            | 0.8 to 1.0                | 900 x 600 x 900        |
+
 Two mount iterations were developed:
- 
+
 **Iteration 1: NEMA17 Mount** - Designed and fabricated first to validate the mounting approach while the final motor selection was still pending.
 
 <div class="row justify-content-center">
@@ -291,13 +291,13 @@ Two mount iterations were developed:
 </div>
 
 ---
- 
+
 ## Restocking Mechanism
- 
+
 The restocking mechanism was designed to match the thread geometry of the delivery rod so that masks could be pre-loaded onto the key and transferred onto the rod in a single motion.
- 
+
 **Iteration 1: Loading Key (Final Design)**
- 
+
 A simple 3D printed key with teeth matching the rod thread pitch. The user loads masks onto the key, inserts it into the dispenser, loops the mask ear loops over the rod, and withdraws the key downward. Its simplicity made it fast and intuitive to use.
 
 <div class="row justify-content-center">
@@ -310,7 +310,7 @@ A simple 3D printed key with teeth matching the rod thread pitch. The user loads
 </div>
 
 **Iteration 2: Loading Gripper**
- 
+
 A dual-key gripper with mismatched opposing teeth, held closed by a rubber band. The intent was to allow the user to grip and hold masks securely during loading. However, testing revealed the rubber band lacked sufficient elastic force to hold all masks when fully loaded, and the overall mechanism was more difficult to operate than the simple key.
 
 <div class="row justify-content-center">
@@ -323,27 +323,27 @@ A dual-key gripper with mismatched opposing teeth, held closed by a rubber band.
 </div>
 
 The first iteration was selected as the final design based on its simplicity, reliability, and ease of use.
- 
+
 ---
- 
+
 ## Outcomes and Reflection
- 
+
 The actuation subsystem met all project requirements: 50 masks were dispensed across 2 restocks, with zero faults recorded during the final system test. The aluminium rod design, motor selection, and restocking mechanism all performed as intended.
- 
+
 Two issues emerged during the final demonstration:
- 
+
 1. **Mask snagging:** Under certain loading conditions, masks caught between the dispenser wall and those behind them on the rod. This was not observed in prior testing and could be addressed in future iterations through slightly larger mask spacing or a marginally shorter rod.
 2. **User error:** The dispenser door was inadvertently left open during demonstration, allowing aerosol spray to enter the enclosure. While the masks were not contaminated, the dispenser required cleaning within the 20-minute demonstration window. This highlighted a need for a door-open indicator or interlock in future designs.
- 
+
 ---
- 
+
 ## Skills Demonstrated
- 
+
 - Iterative mechanical design and prototyping (3D printing, CNC milling, lathe machining)
 - Engineering analysis: statics, friction, and torque calculations
 - Motor selection and electromechanical system integration
 - Manufacturing process selection and justification
 - Cross-subsystem design coordination within a team environment
 - Technical documentation and design traceability
- 
+
 ---
