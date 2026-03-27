@@ -105,7 +105,7 @@ A metal coil was investigated as an alternative to address the surface finish li
 
 <div class="row justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mask-dispenser-project/metal-coil-attachmen.JPG" title="Metal Coil Attachment" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/mask-dispenser-project/metal-coil-attachment.JPG" title="Metal Coil Attachment" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -147,15 +147,6 @@ The final design combined the strengths of the previous two iterations: the smoo
 
 <div class="row justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mask-dispenser-project/aluminum-rod.JPG" title="Aluminium Rod" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Figure: Machined aluminium U-shaped delivery rod.
-</div>
-
-<div class="row justify-content-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/mask-dispenser-project/metal-rod-assembly.JPG" title="Metal Rod Assembly" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -169,7 +160,7 @@ The final design combined the strengths of the previous two iterations: the smoo
     </div>
 </div>
 <div class="caption">
-    Figure: Full length view of the final aluminium delivery rod.
+    Figure: Machined aluminium U-shaped delivery rod.
 </div>
 
 **Results:** Zero dispensing faults in testing, masks sat parallel to the wall, and 25 masks fit on the rod, requiring only 2 restocks to dispense all 50 masks.
@@ -203,6 +194,8 @@ A stepper motor was selected over servo and brushless DC motor alternatives base
 | Stepper Motor | High precision, high holding torque, no encoder required | Higher heat, low-to-medium acceleration         |
 | Servo Motor   | High speed, high torque, high dynamic response           | Requires encoder, more expensive                |
 | Brushless DC  | High efficiency, minimised EMI                           | Requires encoder and complex driver electronics |
+
+---
 
 ### Motor Comparison: NEMA17 vs 28BYJ-48
 
