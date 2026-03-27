@@ -331,7 +331,7 @@
     },
     {
       "name": "Autonomous Robot Defence System - UQ",
-      "summary": "Designed an autonomous robotic defence system to identify IR targets and simulate their elimination by firing a laser pointer at the target. I was responsible for the electrical schematics, PCB Design and CAD of the chassis.",
+      "summary": "Autonomous mobile robot that navigates to an arena centre and engages IR targets with a laser pointer. Responsible for full PCB design and wiring, including schematic capture, component selection, footprint creation, design rule compliance, Gerber file generation, continuity testing, and soldering, using Altium Designer",
       "highlights": ["Altium Designer, Autodesk Inventor"]
     },
     {
