@@ -326,16 +326,19 @@
     },
     {
       "name": "SLAM LiDAR Honours Thesis - UQ",
+      "url": "https://nadiaregli.github.io/projects/slam-lidar-thesis-project/",
       "summary": "Proposed and implemented Doppler-SiMpLE, a scanstitching algorithm that uses per-point Doppler velocity data from LiDAR sensors to improve localisation in geometrically-deficient environments like tunnels.",
       "highlights": ["C++, LiDAR integration, Report writing"]
     },
     {
       "name": "Autonomous Robot Defence System - UQ",
+      "url": "https://nadiaregli.github.io/projects/robot-defence-system-project/",
       "summary": "Autonomous mobile robot that navigates to an arena centre and engages IR targets with a laser pointer. Responsible for full PCB design and wiring, including schematic capture, component selection, footprint creation, design rule compliance, Gerber file generation, continuity testing, and soldering, using Altium Designer",
       "highlights": ["Altium Designer, Autodesk Inventor"]
     },
     {
       "name": "ECG Design and Prototype - UQ",
+      "url": "https://nadiaregli.github.io/projects/ecg-project/",
       "summary": "Designed, simulated, built and tested the electronics and processing for an ECG machine. Practiced electrical design, testing, analysis and signal processing.",
       "highlights": ["LTSpice, Electrical prototyping"]
     }
