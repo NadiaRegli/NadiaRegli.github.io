@@ -6,7 +6,7 @@
     "email": "nadia.regli166@gmail.com",
     "phone": "(+61) 447 727 138",
     "url": "https://nadiaregli.github.io/",
-    "summary": "A Mechatronics Engineer with a Bachelor of Engineering (Hons) from the University of Queensland and two years of professional experience in software development and robotics. My background combines strong programming skills, a solid foundation in robotics, electronics and systems integration, and experience with project management and collaboration in team-based engineering environments. I am seeking an engineering role where I can apply both hardware and software knowledge to develop automation, robotics or embedded systems.",
+    "summary": "A Mechatronics Engineer with a Bachelor of Engineering (Hons) from the University of Queensland, with hands-on experience across electronics, hardware testing, and robotics. My background combines practical, detail-driven problem solving - diagnosing faults, testing circuits, and working through technical documentation - with strong cross-functional collaboration skills. I am seeking a hands-on, procedural engineering or technician role where I can apply my hardware and diagnostic skills to maintain, test and service real-world systems.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -29,11 +29,26 @@
   },
   "work": [
     {
+      "name": "Gilmour Space Technologies",
+      "position": "Avionics Engineer I",
+      "url": "",
+      "startDate": "2026-06-08",
+      "endDate": "",
+      "summary": "Eris Launch Vehicle - Flight Termination System (FTS) <br> Requirements tailoring (RCC 319-25), EMI/EMC testing, V&V documentation, hardware testing.",
+      "highlights": [
+        "Tailoring flight termination system requirements (RCC 319-25) for the launch vehicle, working through detailed technical documentation and test procedures.",
+        "Training in EMI/EMC testing assessments, including conducted and radiated susceptibility testing.",
+        "Reviewing and verifying existing test documentation, identifying gaps and inconsistencies in acceptance and qualification test records.",
+        "Working hands-on with safety system hardware, to support testing and verification activities.",
+        "Collaborating with hardware and test engineers on acceptance test setup upgrades."
+      ]
+    },
+    {
       "name": "Ernst & Young",
       "position": "Digital Engineering Technology Consultant",
       "url": "",
       "startDate": "2024-05-01",
-      "endDate": "",
+      "endDate": "2026-05-29",
       "summary": "Enterprise CMS Platform - Leading Australian Health Insurance Provider <br> Vue.js, C#, Kentico CMS, Azure, Azure DevOps, Azure AD B2C, Jira, Confluence.",
       "highlights": [
         "Developed and delivered full-stack features across the public website, member portal and consultant portal for a major Australian health insurance provider.",
@@ -122,12 +137,7 @@
       "url": "https://www.rachiesratirementhome.com/",
       "startDate": "2024-03-10",
       "endDate": "2024-05-13",
-      "summary": "Volunteered for a registered charity that provides care and shelter for rodents in need. Responsibilities included providing daily care, socialisation and fostering of rats to support their wellbeing and rehoming efforts.",
-      "highlights": [
-        "Provided weekly care, cleaning, feeding for the rescue rodents, ensuring their health and wellbeing while supporting the charity's mission to provide shelter and care for rats in need.",
-        "Fostered rodents in need of temporary care, providing a safe and nurturing environment to support their rehabilitation and rehoming efforts.",
-        "Coordinated with the transport of rodents to veterinary appointments, ensuring they received necessary medical care and support for their health and wellbeing."
-      ]
+      "summary": "Volunteered for a registered charity that provides care and shelter for rodents in need. Responsibilities included providing daily care, socialisation and fostering of rats to support their wellbeing and rehoming efforts."
     }
   ],
   "education": [
@@ -180,13 +190,6 @@
       "issuer": "Udemy",
       "url": "",
       "icon": "fa-solid fa-robot"
-    },
-    {
-      "name": "Developers Headless Shopify",
-      "date": "2025-01-01",
-      "issuer": "Shopify",
-      "url": "",
-      "icon": "fa-solid fa-laptop"
     }
   ],
   "publications": [],
@@ -198,18 +201,10 @@
       "keywords": [
         "Python",
         "C++",
-        "ROS 1",
         "ROS 2",
         "Linux (Ubuntu)",
         "Git",
         "Azure DevOps",
-        "JavaScript",
-        "Vue.js",
-        "C#",
-        "Kentico CMS",
-        "Azure AD B2c",
-        "Shopify",
-        "HTML/CSS",
         "MATLAB"
       ]
     },
@@ -224,8 +219,7 @@
         "Soldering and prototyping tools",
         "Experience with circuit design, PCB layout and prototyping for mechatronic systems.",
         "Experience with signal processing and sensor integration for mechatronic systems.",
-        "Experience with testing, debugging and troubleshooting of electronic systems for mechatronic applications.",
-        "Experience with microcontroller programming and embedded systems development for mechatronic applications."
+        "Experience with testing, debugging and troubleshooting of electronic systems for mechatronic applications."
       ]
     },
     {
@@ -271,18 +265,13 @@
   ],
   "interests": [
     {
-      "name": "PCB Design and Electronics",
+      "name": "Electronics",
       "icon": "fa-solid fa-lightbulb",
       "keywords": []
     },
     {
       "name": "3D Printing",
       "icon": "fa-solid fa-wrench",
-      "keywords": []
-    },
-    {
-      "name": "Robotics and Automation",
-      "icon": "fa-solid fa-robot",
       "keywords": []
     },
     {
@@ -306,14 +295,15 @@
       "name": "Zachary Giofkou",
       "icon": "fa-solid fa-laptop",
       "reference": "Senior Software Engineer at Ernst & Young <br> zachary.giofkou@yahoo.com.au <br> (+61) 422 293 700"
-    },
-    {
-      "name": "Tim Cassell",
-      "icon": "fa-solid fa-robot",
-      "reference": "Robotics Engineer at Universal Field Robots <br> tim.cassell@universalfieldrobots.com.au <br> (+61) 448 762 237"
     }
   ],
   "projects": [
+    {
+      "name": "ECG Design and Prototype - UQ",
+      "url": "https://nadiaregli.github.io/projects/ecg-project/",
+      "summary": "Designed, simulated, built and tested the electronics and processing for an ECG machine. Practiced electrical design, testing, analysis and signal processing.",
+      "highlights": ["LTSpice, Electrical prototyping"]
+    },
     {
       "name": "Underground AutoPrep Robot - UFR",
       "summary": "Contributed to robotics software development for an autonomous underground mining robot, using Python and C++ in a Linux environment with ROS II. Gained experience with mining-specific robotic applications, particularly path-planning in underground spaces, and collaborated in team-based project discussions and implementations.",
@@ -335,12 +325,6 @@
       "url": "https://nadiaregli.github.io/projects/robot-defence-system-project/",
       "summary": "Autonomous mobile robot that navigates to an arena centre and engages IR targets with a laser pointer. Responsible for full PCB design and wiring, including schematic capture, component selection, footprint creation, design rule compliance, Gerber file generation, continuity testing, and soldering, using Altium Designer",
       "highlights": ["Altium Designer, Autodesk Inventor"]
-    },
-    {
-      "name": "ECG Design and Prototype - UQ",
-      "url": "https://nadiaregli.github.io/projects/ecg-project/",
-      "summary": "Designed, simulated, built and tested the electronics and processing for an ECG machine. Practiced electrical design, testing, analysis and signal processing.",
-      "highlights": ["LTSpice, Electrical prototyping"]
     }
   ]
 }

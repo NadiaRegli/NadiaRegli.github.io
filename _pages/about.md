@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mechatronics engineer building intelligent hardware-software systems.
+subtitle:
 
 profile:
   align: right
@@ -27,16 +27,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Nadia Regli, a Mechatronics Engineer from the University of Queensland with a passion for building intelligent physical systems that combine electronics, software, and mechanical design.
+Hi, I'm Nadia Regli, a Mechatronics Engineer from the University of Queensland with a practical, hands-on approach to electronics, hardware, and physical systems. I enjoy getting into the detail of how things work, diagnosing what's gone wrong, and fixing it properly.
 
-My background spans electronics design, robotics, and embedded systems, alongside professional experience in software and robotics engineering. I enjoy working across the full engineering stack, from designing circuits and prototyping hardware to developing the software that brings systems to life.
+During my studies, I designed electrical schematics and PCBs in Altium Designer, built mechanical components in Autodesk Inventor, and spent significant time prototyping, testing, and debugging electronic hardware by hand. My projects included building and testing mixed-signal circuits for an ECG device and developing the PCB for an autonomous robotic platform, which gave me a solid grounding in fault-finding across both circuits and integrated systems.
 
-During my studies, I designed electrical schematics and PCBs in Altium Designer, developed mechanical components in Autodesk Inventor, and built and tested electronic prototypes through hands-on hardware development. My projects included designing and simulating mixed-signal circuits for an ECG device, as well as developing sensing and control systems for an autonomous robotic defence platform.
+I also worked as an Undergraduate Robotics Engineer with Universal Field Robots, where I developed parking planner software for an autonomous underground mining robot using ROS2 in a Linux (Ubuntu) environment. This involved working through complex path-planning logic and debugging software behaviour against real-world constraints.
 
-I also worked as a Robotics Engineer with Universal Field Robots, contributing to the development of an autonomous underground mining robot using ROS2, C++, and Python. This work involved integrating sensors, implementing path planning algorithms, and debugging complex hardware-software systems in Linux (Ubuntu) environments.
+I'm currently an Avionics Engineer at Gilmour Space, an aerospace startup building Australia's first orbital launch vehicle, where I work on flight safety hardware testing and verification. This has sharpened my attention to detail, my ability to work methodically through technical documentation, and my comfort working in high-reliability, safety-critical environments.
 
-Currently, I work as a Digital Engineering Technology Consultant at EY, where I develop full-stack applications using JavaScript frameworks, in particular Vue.js and C#. While this role focuses on software, it has strengthened my skills in system architecture, debugging complex systems, building reliable production-grade solutions, demonstrating technical work to both engineering teams and C-suite client executives, and collaborating across cross-functional teams and vendors. These skills translate strongly to robotics, embedded systems development, and delivering real-world engineering solutions.
-
-I'm particularly interested in opportunities involving electronics design, robotics, embedded systems, and hardware-software integration, where I can apply both my hands-on engineering background and software expertise to build real-world systems.
+I'm particularly interested in roles where I can apply hands-on technical skills to real equipment - diagnosing faults, performing maintenance, and keeping critical systems running reliably. I enjoy being on the tools, working directly with hardware, and solving problems that have an immediate, practical impact.
 
 I am motivated by the opportunity to contribute to technologies that solve meaningful problems and improve how people live and work.
