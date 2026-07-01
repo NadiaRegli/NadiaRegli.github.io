@@ -22,7 +22,7 @@ A mechatronic system designed to dispense 50 individual, uncontaminated face mas
 
 ## My role
 
-I was responsible for the **Actuation Subsystem**, which encompassed the delivery rod design, motor selection and characterisation, motor mounting, and restocking mechanism. I also contributed to the housing CAD, frame and plate machining, and assisted team members across other subsystems.
+I was responsible for the Actuation Subsystem, which encompassed the delivery rod design, motor selection and characterisation, motor mounting, and restocking mechanism. I also contributed to the housing CAD, frame and plate machining, and assisted team members across other subsystems.
 
 <div class="row justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -97,7 +97,7 @@ A range of 3D printed rods were designed with varying thread profiles (triangula
     Figure: Multiple thread profile iterations (triangular, buttress, square, U-shaped) printed and tested.
 </div>
 
-Testing confirmed that the **U-shaped thread** produced the fewest dispensing faults. However, the inherent surface roughness of FDM 3D printing remained a source of occasional mask snagging.
+Testing confirmed that the U-shaped thread produced the fewest dispensing faults. However, the inherent surface roughness of FDM 3D printing remained a source of occasional mask snagging.
 
 ### Iteration 3: Metal Coil Rod
 
@@ -143,7 +143,7 @@ The coil offered significantly improved reliability over the 3D printed rods. Ho
 
 ### Iteration 4: Machined Aluminium Rod (Final Design)
 
-The final design combined the strengths of the previous two iterations: the smooth surface finish of metal and the U-shaped thread geometry that keeps masks parallel to the dispenser wall. The rod was manufactured using a **CNC mill and lathe**, with the thread spanning the full rod length for ease of machining. Two parallel holes were drilled at one end to accept grub screws for secure attachment to the motor shaft flats.
+The final design combined the strengths of the previous two iterations: the smooth surface finish of metal and the U-shaped thread geometry that keeps masks parallel to the dispenser wall. The rod was manufactured using a CNC mill and lathe, with the thread spanning the full rod length for ease of machining. Two parallel holes were drilled at one end to accept grub screws for secure attachment to the motor shaft flats.
 
 <div class="row justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -163,7 +163,7 @@ The final design combined the strengths of the previous two iterations: the smoo
     Figure: Machined aluminium U-shaped delivery rod.
 </div>
 
-**Results:** Zero dispensing faults in testing, masks sat parallel to the wall, and 25 masks fit on the rod, requiring only 2 restocks to dispense all 50 masks.
+Results: Zero dispensing faults in testing, masks sat parallel to the wall, and 25 masks fit on the rod, requiring only 2 restocks to dispense all 50 masks.
 
 ---
 
@@ -183,7 +183,7 @@ The required motor torque was determined by analysing the frictional forces acti
 </div>
 
 - Reaction force at support B: By = 0.08296 N
-- Required friction force to overcome: F = 0.2 x 0.08296 = **16.59 mN**
+- Required friction force to overcome: F = 0.2 x 0.08296 = 16.59 mN
 
 ### Motor Type Selection
 
@@ -219,12 +219,12 @@ Two stepper motors were evaluated based on availability, size, torque, driver re
     Figure: 28BYJ-48 stepper motor.
 </div>
 
-The **28BYJ-48** was selected for its compact form factor (42 x 32 x 30 mm), which allowed for a longer delivery rod and therefore greater mask capacity per restock. Key specifications:
+The 28BYJ-48 was selected for its compact form factor (42 x 32 x 30 mm), which allowed for a longer delivery rod and therefore greater mask capacity per restock. Key specifications:
 
 - Type: 4-phase, 5-wire unipolar stepper motor
 - Rated voltage: 5-12 V (compatible with all other system components)
 - Operating current: 240 mA (motor), 500 mA (driver)
-- Holding torque: **34.4 mN.m** (exceeds the 16.59 mN frictional requirement)
+- Holding torque: 34.4 mN.m (exceeds the 16.59 mN frictional requirement)
 - Shaft: Dual flats for grub screw attachment
 - Driver: ULN2003 (34 x 33 x 11 mm, supplied with motor)
 
@@ -252,7 +252,7 @@ The motor mount was 3D printed in PLA, selected over CNC machining due to its lo
 
 Two mount iterations were developed:
 
-**Iteration 1: NEMA17 Mount** - Designed and fabricated first to validate the mounting approach while the final motor selection was still pending.
+Iteration 1: NEMA17 Mount - Designed and fabricated first to validate the mounting approach while the final motor selection was still pending.
 
 <div class="row justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -272,7 +272,7 @@ Two mount iterations were developed:
     Figure: CAD model of the NEMA17 motor mount.
 </div>
 
-**Iteration 2: 28BYJ-48 Mount (Final)** - Redesigned to fit the smaller selected motor. Upon testing, the mount held the motor securely with minimal vibration, enabling accurate and repeatable mask dispensing.
+Iteration 2: 28BYJ-48 Mount (Final) - Redesigned to fit the smaller selected motor. Upon testing, the mount held the motor securely with minimal vibration, enabling accurate and repeatable mask dispensing.
 
 <div class="row justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -289,7 +289,7 @@ Two mount iterations were developed:
 
 The restocking mechanism was designed to match the thread geometry of the delivery rod so that masks could be pre-loaded onto the key and transferred onto the rod in a single motion.
 
-**Iteration 1: Loading Key (Final Design)**
+Iteration 1: Loading Key (Final Design)
 
 A simple 3D printed key with teeth matching the rod thread pitch. The user loads masks onto the key, inserts it into the dispenser, loops the mask ear loops over the rod, and withdraws the key downward. Its simplicity made it fast and intuitive to use.
 
@@ -302,7 +302,7 @@ A simple 3D printed key with teeth matching the rod thread pitch. The user loads
     Figure: 3D printed mask loading key.
 </div>
 
-**Iteration 2: Loading Gripper**
+Iteration 2: Loading Gripper
 
 A dual-key gripper with mismatched opposing teeth, held closed by a rubber band. The intent was to allow the user to grip and hold masks securely during loading. However, testing revealed the rubber band lacked sufficient elastic force to hold all masks when fully loaded, and the overall mechanism was more difficult to operate than the simple key.
 
@@ -325,8 +325,8 @@ The actuation subsystem met all project requirements: 50 masks were dispensed ac
 
 Two issues emerged during the final demonstration:
 
-1. **Mask snagging:** Under certain loading conditions, masks caught between the dispenser wall and those behind them on the rod. This was not observed in prior testing and could be addressed in future iterations through slightly larger mask spacing or a marginally shorter rod.
-2. **User error:** The dispenser door was inadvertently left open during demonstration, allowing aerosol spray to enter the enclosure. While the masks were not contaminated, the dispenser required cleaning within the 20-minute demonstration window. This highlighted a need for a door-open indicator or interlock in future designs.
+1. Mask snagging: Under certain loading conditions, masks caught between the dispenser wall and those behind them on the rod. This was not observed in prior testing and could be addressed in future iterations through slightly larger mask spacing or a marginally shorter rod.
+2. User error: The dispenser door was inadvertently left open during demonstration, allowing aerosol spray to enter the enclosure. While the masks were not contaminated, the dispenser required cleaning within the 20-minute demonstration window. This highlighted a need for a door-open indicator or interlock in future designs.
 
 ---
 
