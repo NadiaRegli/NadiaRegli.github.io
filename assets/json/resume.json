@@ -6,7 +6,7 @@
     "email": "nadia.regli166@gmail.com",
     "phone": "(+61) 447 727 138",
     "url": "https://nadiaregli.github.io/",
-    "summary": "A Mechatronics Engineer with a Bachelor of Engineering (Hons) from the University of Queensland, with hands-on experience across electronics, hardware testing, and robotics. My background combines practical, detail-driven problem solving - diagnosing faults, testing circuits, and working through technical documentation - with strong cross-functional collaboration skills. I am seeking a hands-on, procedural engineering or technician role where I can apply my hardware and diagnostic skills to maintain, test and service real-world systems.",
+    "summary": "A Mechatronics Engineer with a Bachelor of Engineering (Hons) from the University of Queensland and software development experience spanning full-stack web platforms and robotics. My background combines practical, detail-driven problem solving, including diagnosing faults, testing systems, and working through technical documentation, with strong full-stack development skills across Vue.js, C#, and Python/C++. I am seeking a software development role where I can apply my technical and problem-solving skills to build and maintain real-world systems.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -28,21 +28,6 @@
     ]
   },
   "work": [
-    {
-      "name": "Gilmour Space Technologies",
-      "position": "Avionics Engineer I",
-      "url": "",
-      "startDate": "2026-06-08",
-      "endDate": "",
-      "summary": "Launch Vehicle - <br> Requirements tailoring (RCC 319-25), hardware testing.",
-      "highlights": [
-        "Tailoring flight termination system requirements (RCC 319-25) for the launch vehicle, working through detailed technical documentation and test procedures.",
-        "Training in EMI/EMC testing assessments, including conducted and radiated susceptibility testing.",
-        "Reviewing and verifying existing test documentation, identifying gaps and inconsistencies in acceptance and qualification test records.",
-        "Working hands-on with safety system hardware, to support testing and verification activities.",
-        "Collaborating with hardware and test engineers on acceptance test setup upgrades."
-      ]
-    },
     {
       "name": "Ernst & Young",
       "position": "Digital Engineering Technology Consultant",
@@ -122,7 +107,7 @@
       "position": "Mentor",
       "url": "https://abcn.com.au/",
       "startDate": "2026-03-24",
-      "endDate": "2026-12-24",
+      "endDate": "2026-03-24",
       "summary": "Volunteered for the ABCN Dulili Program to mentor First Nations students, beginning Year 9 and continuing to Year 10, Designed for, and in consultation with First Nations young people.",
       "highlights": [
         "Guided students in the group on how to effectively complete activities and tasks.",
@@ -190,6 +175,13 @@
       "issuer": "Udemy",
       "url": "",
       "icon": "fa-solid fa-robot"
+    },
+    {
+      "name": "Headless at Shopify for Developers",
+      "date": "2025-01-01",
+      "issuer": "Shopify",
+      "url": "",
+      "icon": "fa-solid fa-cart-shopping"
     }
   ],
   "publications": [],
@@ -199,11 +191,16 @@
       "level": "",
       "icon": "",
       "keywords": [
+        "C# (.NET)",
+        "JavaScript",
+        "Vue.js",
         "Python",
         "C++",
-        "ROS 2",
+        "HTML",
+        "ROS 1 and 2",
         "Linux (Ubuntu)",
         "Git",
+        "GitHub",
         "Azure DevOps",
         "MATLAB"
       ]
@@ -292,9 +289,7 @@
   ],
   "references": [
     {
-      "name": "Zachary Giofkou",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Senior Software Engineer at Ernst & Young <br> zachary.giofkou@yahoo.com.au <br> (+61) 422 293 700"
+      "name": "Available upon request."
     }
   ],
   "projects": [
@@ -318,7 +313,7 @@
       "name": "SLAM LiDAR Honours Thesis - UQ",
       "url": "https://nadiaregli.github.io/projects/slam-lidar-thesis-project/",
       "summary": "Proposed and implemented Doppler-SiMpLE, a scanstitching algorithm that uses per-point Doppler velocity data from LiDAR sensors to improve localisation in geometrically-deficient environments like tunnels.",
-      "highlights": ["C++, LiDAR integration, Report writing"]
+      "highlights": ["C++, LiDAR integration, MATLAB, Report writing"]
     },
     {
       "name": "Autonomous Robot Defence System - UQ",

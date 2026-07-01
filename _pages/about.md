@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: hi-res-professional-photo.jpeg
+  image: profile-photo.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <a href='https://www.linkedin.com/in/nadia-regli/'>linkedin.com/nadia-regli</a>
@@ -27,14 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Nadia Regli, a Mechatronics Engineer from the University of Queensland with a practical, hands-on approach to electronics, hardware, and physical systems. I enjoy getting into the detail of how things work, diagnosing what's gone wrong, and fixing it properly.
+Hi, I'm Nadia Regli, a Mechatronics Engineer from the University of Queensland with software development experience spanning full-stack web platforms, and robotics. I enjoy getting into the detail of how systems work, diagnosing what's gone wrong, and building solutions that hold up in the real world.
 
-During my studies, I designed electrical schematics and PCBs in Altium Designer, built mechanical components in Autodesk Inventor, and spent significant time prototyping, testing, and debugging electronic hardware by hand. My projects included building and testing mixed-signal circuits for an ECG device and developing the PCB for an autonomous robotic platform, which gave me a solid grounding in fault-finding across both circuits and integrated systems.
+Most recently, I worked as a full-stack developer at EY on a large-scale Australian health insurance platform, building features in Vue.js, C#, and Kentico across both the CMS and EAI teams. I led a Kentico CMS migration to a newer platform version and built multi-factor authentication into our website sign-in process using Azure AD B2C, which I demonstrated directly to client-side C-suite executives. Beyond development, I conducted code reviews, mentored new team members, maintained technical documentation, and regularly led the CMS team in my manager's absence.
 
-I also worked as an Undergraduate Robotics Engineer with Universal Field Robots, where I developed parking planner software for an autonomous underground mining robot using ROS2 in a Linux (Ubuntu) environment. This involved working through complex path-planning logic and debugging software behaviour against real-world constraints.
+My path into software also runs through hardware and robotics. As an Undergraduate Robotics Engineer at Universal Field Robots, I developed parking planner software for an autonomous underground mining robot using Python, C++, and ROS2 in a Linux environment, working through complex path-planning logic and debugging against real-world constraints. During my studies, I designed electrical schematics and PCBs in Altium Designer, built mechanical components in Autodesk Inventor, and built and tested mixed-signal circuits for an ECG device, alongside developing the PCB for an autonomous robotic platform. I also completed an Honours thesis in LiDAR-based localisation and have experience tutoring engineering students at UQ in control systems and team-based design projects.
 
-I'm currently an Avionics Engineer at Gilmour Space, an aerospace startup building Australia's first orbital launch vehicle, where I work on flight safety hardware testing and verification. This has sharpened my attention to detail, my ability to work methodically through technical documentation, and my comfort working in high-reliability, safety-critical environments.
-
-I'm particularly interested in roles where I can apply hands-on technical skills to real equipment - diagnosing faults, performing maintenance, and keeping critical systems running reliably. I enjoy being on the tools, working directly with hardware, and solving problems that have an immediate, practical impact.
-
-I am motivated by the opportunity to contribute to technologies that solve meaningful problems and improve how people live and work.
+I hold a Baseline security clearance and Australian citizenship. I'm motivated by building technology that solves meaningful problems and improves how people live and work, and I bring a structured, methodical approach shaped by both commercial software delivery and engineering environments where reliability matters.
