@@ -6,7 +6,7 @@
     "email": "nadia.regli166@gmail.com",
     "phone": "(+61) 447 727 138",
     "url": "https://nadiaregli.github.io/",
-    "summary": "A Mechatronics Engineer with a Bachelor of Engineering (Hons) from the University of Queensland and software development experience spanning full-stack web platforms and robotics. My background combines practical, detail-driven problem solving, including diagnosing faults, testing systems, and working through technical documentation, with strong full-stack development skills across Vue.js, C#, and Python/C++. I am seeking a software development role where I can apply my technical and problem-solving skills to build and maintain real-world systems.",
+    "summary": "A Mechatronics Engineer with a Bachelor of Engineering (Hons) from the University of Queensland and software development experience spanning full-stack web platforms and robotics, along with hands-on experience in hardware design and electronics. I bring a detail-driven approach to diagnosing faults, testing systems, and working through complex technical challenges, supported by strong development skills in Vue.js, C#, Python, and C++, as well as hardware design and electronics expertise. I am seeking a technical role where I can apply my engineering and problem-solving skills to develop and maintain robust systems.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -217,7 +217,8 @@
         "Soldering and prototyping tools",
         "Experience with circuit design, PCB layout and prototyping for mechatronic systems.",
         "Experience with signal processing and sensor integration for mechatronic systems.",
-        "Experience with testing, debugging and troubleshooting of electronic systems for mechatronic applications."
+        "Experience with testing, debugging and troubleshooting of electronic systems for mechatronic applications.",
+        "Experience using oscilloscopes, multimeters and other electronic testing equipment to diagnose and resolve issues in electronic systems."
       ]
     },
     {
@@ -298,17 +299,17 @@
       "name": "ECG Design and Prototype - UQ",
       "url": "https://nadiaregli.github.io/projects/ecg-project/",
       "summary": "Designed, simulated, built and tested the electronics and processing for an ECG machine. Practiced electrical design, testing, analysis and signal processing.",
-      "highlights": ["LTSpice, Electrical prototyping"]
+      "highlights": ["LTSpice, Electrical design and prototyping, Arduino"]
     },
     {
       "name": "Underground AutoPrep Robot - UFR",
       "summary": "Contributed to robotics software development for an autonomous underground mining robot, using Python and C++ in a Linux environment with ROS II. Gained experience with mining-specific robotic applications, particularly path-planning in underground spaces, and collaborated in team-based project discussions and implementations.",
-      "highlights": ["ROS 2, C++, Python"]
+      "highlights": ["ROS 2, C++, Python, Linux (Ubuntu), Gazebo, RViz, Git"]
     },
     {
       "name": "Health Insurance Website - EY",
       "summary": "Worked as a full-stack developer on both the CMS and EAI team for a leading Australian health insurance provider. Built and maintained front-end and back-end features using Vue.js and C#, ensuring smooth user experience across member, consultant and public portals.",
-      "highlights": ["Vue.js, C#, Agile project management"]
+      "highlights": ["Vue.js, C# (.NET), Agile project management, Azure DevOps, Azure Logic and Function Apps, Git, Jira, Confluence"]
     },
     {
       "name": "SLAM LiDAR Honours Thesis - UQ",
@@ -320,7 +321,7 @@
       "name": "Autonomous Robot Defence System - UQ",
       "url": "https://nadiaregli.github.io/projects/robot-defence-system-project/",
       "summary": "Autonomous mobile robot that navigates to an arena centre and engages IR targets with a laser pointer. Responsible for full PCB design and wiring, including schematic capture, component selection, footprint creation, design rule compliance, Gerber file generation, continuity testing, and soldering, using Altium Designer",
-      "highlights": ["Altium Designer, Autodesk Inventor"]
+      "highlights": ["Altium Designer, Autodesk Inventor, PCB design and testing"]
     }
   ]
 }
