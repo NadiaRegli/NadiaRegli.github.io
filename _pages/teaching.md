@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-## Academic Tutor — The University of Queensland
+## Academic Tutor (The University of Queensland)
 
 As an academic tutor within the School of Mechanical & Mining Engineering and the School of Electrical Engineering & Computer Science at [The University of Queensland](https://www.uq.edu.au/), I supported undergraduate mechatronics and control engineering courses. My responsibilities included running tutorials and practicals, demonstrating and teaching to groups of 100+ students, answering questions, and marking assessments. I did not lead or coordinate these courses. My role was to support the course coordinators and help students succeed.
 
